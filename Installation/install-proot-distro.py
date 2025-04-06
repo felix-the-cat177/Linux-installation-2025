@@ -46,7 +46,6 @@ def debian_system():
   os.system(update)
   print(f"{amarelo}[✓] Atualização concluida!{Fore.RESET}")
   time.sleep(1.5)
-  os.system(clear)
   print(f"{amarelo}[/] Executando pkg upgrade & apt upgrade...{Fore.RESET}")
   os.system(upgrade)
   print(f"{amarelo}[✓] Instalação concluida!{Fore.RESET}")
