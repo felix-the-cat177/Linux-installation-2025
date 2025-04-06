@@ -62,6 +62,7 @@ def debian_system():
   print(f"{amarelo}[/] Login no Debian...{Fore.RESET}")
   time.sleep(1.5)
   os.system("proot-distro login debian -- bash -c 'cd / && apt update && apt install git python3 && git clone https://github.com/felix-the-cat177/Linux-installation-2025.git && cd Linux-installation-2025/Installation && python3 setup-install-debian-cinammon.py'")
+  time.sleep(3)
   with open("Dados/user.json", "r") as user_json:
     usuario = json.load(user_json)
     user = usuario["user"]
