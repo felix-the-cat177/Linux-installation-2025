@@ -77,7 +77,7 @@ try:
       "full_name": full_name,
       "senha": senha
     }
-    with open("./Dados/user.json", "w") as arquivos:
+    with open("./Dados/user.json", "w") as arquivo:
       json.dump(usuario, arquivos, indent=4)
     os.system(f"useradd -M -s /bin/bash -c '{full_name}' {user}")
     os.system(f"echo {user}:{senha} | chpasswd")
