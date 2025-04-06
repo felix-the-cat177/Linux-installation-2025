@@ -62,7 +62,7 @@ def debian_system():
   os.system(clear)
   print(f"{amarelo}[/] Login no Debian...{Fore.RESET}")
   time.sleep(1.5)
-  os.system("proot-distro login debian -- apt update && apt install git python && git clone https://github.com/felix-the-cat177/Linux-installation-2025.git && cd Linux-installation-2025 && cd Installation && python setup-install-debian-cinammon.py")
+  os.system("proot-distro login debian -- bash -c 'cd / && apt update && apt install git python && git clone https://github.com/felix-the-cat177/Linux-installation-2025.git && cd Linux-installation-2025 && cd Installation && python setup-install-debian-cinammon.py'")
   with open("./Dados/user.json", "r") as arquivos_json:
     usuario = json.load(arquivos.json)
     print(f"{amarelo}[!] Qual cinnamon você deseja?{Fore.RESET}")
