@@ -3,7 +3,6 @@ import time
 import json
 import sys
 import subprocess
-from colorama import init, Fore
 from datetime import datetime
 
 # horas & sistema & shell
@@ -43,31 +42,31 @@ termux = system_termux()
 
 limpar_tela()
 print(banner)
-print(f"{amarelo}[✓] Script By Diogo{Fore.RESET}")
-print(f"{amarelo}[✓] Hora atual: {agora.hour:02d}:{agora.minute:02d}:{agora.second:02d}{Fore.RESET}")
+print(f"{amarelo}[✓] Script By Diogo{reset}")
+print(f"{amarelo}[✓] Hora atual: {agora.hour:02d}:{agora.minute:02d}:{agora.second:02d}{reset}")
 system_windows()
 time.sleep(1.5)
 try:
   if termux == "Termux":
-    print(f"{amarelo}[/] Instalando nano{Fore.RESET}")
+    print(f"{amarelo}[/] Instalando nano{reset}")
     time.sleep(0.5)
     os.system(nano)
-    print(f"{amarelo}[✓] Instalação nano concluida!{Fore.RESET}")
+    print(f"{amarelo}[✓] Instalação nano concluida!{reset}")
     time.sleep(0.5)
-    print(f"{amarelo}[/] Instalando adduser{Fore.RESET}")
+    print(f"{amarelo}[/] Instalando adduser{reset}")
     time.sleep(0.5)
     os.system(adduser)
-    print(f"{amarelo}[✓] Instalação adduser concluida!{Fore.RESET}")
+    print(f"{amarelo}[✓] Instalação adduser concluida!{reset}")
     time.sleep(0.5)
-    print(f"{amarelo}[/] Instalando sudo{Fore.RESET}")
+    print(f"{amarelo}[/] Instalando sudo{reset}")
     time.sleep(0.5)
     os.system(sudo)
-    print(f"{amarelo}[✓] Instalação sudo concluida!{Fore.RESET}")
+    print(f"{amarelo}[✓] Instalação sudo concluida!{reset}")
     time.sleep(0.5)
-    print(f"{amarelo}[/] Atualizando apt upgrade{Fore.RESET}")
+    print(f"{amarelo}[/] Atualizando apt upgrade{reset}")
     os.system(upgrade)
     time.sleep(0.5)
-    print(f"{amarelo}[✓] Todos os pacotes e upgrade instalado!{Fore.RESET}")
+    print(f"{amarelo}[✓] Todos os pacotes e upgrade instalado!{reset}")
     time.sleep(2.5)
     os.system(clear)
     user = input("Digite o seu usuário: ")
@@ -89,7 +88,7 @@ try:
     os.system("chmod +x /data/data/com.termux/files/usr/bin/debian")
     os.system("exit")
 except ValueError:
-  print(f"{vermelho}[X] ERROR ValueError{Fore.RESET}")
+  print(f"{vermelho}[X] ERROR ValueError{reset}")
 except KeyboardInterrupt:
-  print(f"{vermelho}[!] Forçamento com CTRL + C{Fore.RESET}")
+  print(f"{vermelho}[!] Forçamento com CTRL + C{reset}")
   exit()
