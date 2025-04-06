@@ -66,7 +66,7 @@ def debian_system():
     usuario = json.load(user_json)
     user = usuario["user"]
     os.system(clear)
-      os.system(f"proot-distro login --user root debian -- apt install cinnamon-desktop-environment -y")
+    os.system(f"proot-distro login --user root debian -- apt install cinnamon-desktop-environment -y")
   
 termux = system_termux()
 
