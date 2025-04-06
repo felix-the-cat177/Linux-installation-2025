@@ -71,9 +71,9 @@ def debian_system():
     print("2- Cinammon full")
     cinnamon_opcao = input("Digite a opcão: ")
     if cinnamon_opcao == "1":
-      os.system(f"proot-distro login --user {user} debian -- sudo apt update && sudo apt install cinnamon -y")
+      os.system(f"proot-distro login --user root debian -- apt update && apt install cinnamon -y")
     elif cinnamon_opcao == "2":
-      os.system(f"proot-distro login --user {user} debian -- sudo apt install cinnamon-desktop-environment -y")
+      os.system(f"proot-distro login --user root debian -- apt install cinnamon-desktop-environment -y")
   
 termux = system_termux()
 
