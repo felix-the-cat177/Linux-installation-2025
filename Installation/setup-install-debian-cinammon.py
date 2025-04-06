@@ -20,7 +20,8 @@ int()
 # banner e cor do Gato Félix
 banner = subprocess.check_output(['figlet', "Felix The Cat"]).decode('utf-8')
 vermelho = "\033[91m"
-amarelo = Fore.YELLOW
+amarelo = "\033[93m"
+reset = "\033[0m]"
 
 def limpar_tela():
   if system == "windows" or system == "Windows":
