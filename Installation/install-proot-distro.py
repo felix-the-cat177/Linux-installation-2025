@@ -63,7 +63,7 @@ def debian_system():
   time.sleep(1.5)
   os.system("proot-distro login debian -- bash -c 'cd / && apt update && apt install git python3 && git clone https://github.com/felix-the-cat177/Linux-installation-2025.git && cd Linux-installation-2025 && cd Installation && python setup-install-debian-cinammon.py'")
   with open("Dados/user.json", "r") as user_json:
-    usuario = json.load(user_json)
+    user = json.load(user_json)
     print(f"{amarelo}[!] Qual cinnamon você deseja?{Fore.RESET}")
     print("1- Cinammon básico")
     print("2- Cinammon full")
