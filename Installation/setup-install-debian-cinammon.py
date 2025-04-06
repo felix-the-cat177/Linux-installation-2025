@@ -80,7 +80,7 @@ try:
     user_atual = os.path.dirname(__file__)
     user_arquivo = os.path.join(user_atual, "Dados", "user.json")
     with open(user_arquivo, "w") as arquivo:
-    json.dump(usuario, arquivo, indent=4)
+      json.dump(usuario, arquivo, indent=4)
     os.system(f"useradd -M -s /bin/bash -c '{full_name}' {user}")
     os.system(f"echo {user}:{senha} | chpasswd")
     os.system(f"echo '{user} ALL=(ALL:ALL) ALL' | sudo EDITOR='tee -a' visudo")
