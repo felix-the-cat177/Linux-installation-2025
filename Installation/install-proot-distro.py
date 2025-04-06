@@ -66,13 +66,6 @@ def debian_system():
     usuario = json.load(user_json)
     user = usuario["user"]
     os.system(clear)
-    print(f"{amarelo}[!] Qual cinnamon você deseja?{Fore.RESET}")
-    print("1- Cinammon básico")
-    print("2- Cinammon full")
-    cinnamon_opcao = input("Digite a opcão: ")
-    if cinnamon_opcao == "1":
-      os.system(f"proot-distro login --user root debian -- apt update && apt install cinnamon-desktop-control-center cinnamon-desktop-data cinnamon-screensaver -y")
-    elif cinnamon_opcao == "2":
       os.system(f"proot-distro login --user root debian -- apt install cinnamon-desktop-environment -y")
   
 termux = system_termux()
