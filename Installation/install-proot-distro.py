@@ -72,7 +72,7 @@ def debian_system():
     os.system("chmod +x startcinnamon_debian")
     print("[!] Edite o setup-install-debian-cinammon.sh com um editor de texto ex: nano e mude o droidmaster para seu usuário do Debian e salve o arquivo")
     print(f'{amarelo}[✓] Créditos do Script "startcinnamon_debian" para droidmaster')
-    print('[✓] Créditos do repositório por DxynamoYT'
+    print('[✓] Créditos do repositório por DxynamoYT')
     print(f'[✓] meu canal: https://youtube.com/@dxynamoyt?si=L4dDRu7bQyNuh3H6{RESET}')
   
 termux = system_termux()
