@@ -80,7 +80,7 @@ termux = system_termux()
 
 limpar_tela()
 print(f"{banner}")
-print(f"{amarelo}[✓] Script By Diogo{Fore.RESET}")
+print(f"{amarelo}[✓] Script Por DxynamoYT{Fore.RESET}")
 print(f"{amarelo}[✓] Hora atual: {agora.hour:02d}:{agora.minute:02d}:{agora.second:02d}{Fore.RESET}")
 system_windows()
 try:
